@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <style>
+        .my-style{
+            padding: 23px;     
+        }
+        .my-form{
+            padding: 20px;
+        }
+        .my-form .form-group{
+            padding-bottom: 15px;
+        }
+        .my-list{
+            width: 100%;
+            background-color: black;
+            color: cornsilk;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        .button{
+            display: block;
+            padding:10px 15px ;
+            width: 100%;
+            background-color: black;
+            color: cornsilk
+        }
+  </style>
+</head>
+<body>
+    <div class="container bg-secondary p-3">
+        
+        <div class="row">
+            <div class="col-12">
+                <img src="rithin1.jfif" class="img-thumbnail" alt="Responsive image">
+                
+                
+
+            </div>
+        </div>
+
+        <div class="row my-style">
+            <div class="col- col-sm-0 col-md-2 bg-black"></div>
+
+            <div class="col- col-sm-12 col-md-8  coltext-white bg-black">
+
+
+
+                <form class="my-form">
+                    <div class="form-group">
+                      
+                        <select name="Name" class="my-list" >
+                            <option value="sel">Select Name</option>
+                            <option value="mir">Mirzad</option>
+                            <option value="ash">Asher</option>
+                            <option value="tom">Tom</option>
+                            <option value="jvg">JVG</option>
+                            <option value="pp">Paul</option>
+                            <option value="rit">Rithin</option>
+
+                    </div>
+
+
+                       <input class="button" type="submit" value="Submit" name="Submit">
+
+                    </form>
+
+                
+
+            </div>
+
+
+            <div class="col- col-sm-0 col-md-2 bg-black"></div>
+
+            
+
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                
+                <img src="rithin3.jfif" class="img-thumbnail" alt="Responsive image">
+                
+
+            </div>
+        </div>
+        
+
+    </div>
+
+    <script>
+        var button = document.querySelector(".button");
+        var select = document.querySelector(".my-list");
+        button.addEventListener("click", ()=>{
+              let name = select.value;
+            if(name=="mir"){
+                alert("You have paid ₹1,280. You were to pay ₹557. You will recieve a balance of ₹723.");
+            }
+            else  if(name=="ash"){
+                alert("You have paid ₹1,000. You were to pay ₹725. You will recieve a balance of ₹275.");
+            }
+            else  if(name=="tom"){
+                alert("You have paid ₹500. You were to pay ₹390. You will recieve a balance of ₹110.");
+            }
+            else  if(name=="jvg"){
+                alert("You have paid ₹340. You were to pay ₹725. You have to pay a balance of ₹385.");
+            }
+            else  if(name=="pp"){
+                alert("You have paid ₹0. You were to pay ₹725. You have to pay a balance of ₹725.");
+            }
+            else if(name=="rit"){
+                alert("Thankyou Bro. Happy Married Life.")
+            }   
+            else if(name="sel")   {
+                alert("Please select a Name.")
+            }    
+        });
+         
+    </script>
+
+
+</body>
+</html>
